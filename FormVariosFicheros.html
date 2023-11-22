@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir multiples imagenes</title>
+</head>
+<body>
+
+    <h2>Subir multiples imagenes</h2>
+
+    <div>
+
+        <form enctype="multipart/form-data" action="variosficheros.php" method="post">
+
+            <label for="archivos">Indique los archivos que quieres subir: </label>
+            <input type="file" name="archivos[]" multiple="" accept="image/png, image/jpeg"><br><br>
+
+            <input type="hidden" name="MAX_FILE_SIZE" value="200000" /> <!-- 200Kbytes -->
+    
+    
+            <input type="submit" value="Subir archivos" />
+            <input type="reset" value="Borrar selección"/>
+        </form>
+
+    </div>   
+    
+</body>
+</html>
