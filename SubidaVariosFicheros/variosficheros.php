@@ -58,7 +58,7 @@ if (count($_POST) == 0 ){
                         } 
                         else 
                         {
-                            $mensaje = "Error: Solo se permiten archivos PNG o JPG.<br>";
+                            $mensaje = "Error: Solo se permiten archivos PNG o JPG o el archivo ya esta en el directorio.<br>";
                         }
                     } 
                     else 
